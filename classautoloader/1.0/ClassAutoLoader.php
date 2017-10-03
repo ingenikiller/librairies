@@ -1,9 +1,11 @@
 <?php
 
 //fonction __autoload "redéfinie"
-function __autoload($p_className) {
+/*function __autoload($p_className) {
 	ClassAutoLoader::chargeClasse($p_className);
-}
+}*/
+
+spl_autoload_register('ClassAutoLoader::chargeClasse');
 
 //chemin du fichier de configuration
 define( 'CMEMIN_CLASSLOADER', './config/configLoader.xml', true);
