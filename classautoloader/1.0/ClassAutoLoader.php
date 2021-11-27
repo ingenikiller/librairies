@@ -8,7 +8,7 @@
 spl_autoload_register('ClassAutoLoader::chargeClasse');
 
 //chemin du fichier de configuration
-define( 'CMEMIN_CLASSLOADER', './config/configLoader.xml', true);
+define( 'CMEMIN_CLASSLOADER', './config/configLoader.xml');
 
 class ClassAutoLoader {
 
